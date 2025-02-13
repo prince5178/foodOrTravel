@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(25, 171, 234);
+    color: white;
+}
+
+h1 {
+    margin-top: 15px;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-right: 40px;
+}
+
+a:hover {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(64, 188, 188);
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+
+#imghome {
+    height: 400px;
+    max-width: 100%;
+}
+
+#ser {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.servicecontainer {
+    display: flex;
+    align-items: center;
+    margin: 50px 200px;
+    flex-wrap: wrap;
+}
+
+#imgservice {
+    height: 250px;
+    width: 250px;
+    max-width: 100%;
+}
+
+.para {
+    margin: 0 130px;
+    box-shadow: 0px 0px 3px 5px gainsboro;
+    padding: 20px;
+}
+
+#about-id {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+#imgabout {
+    height: 400px;
+    margin: 0 400px;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+#paraabout {
+    margin: 0 130px;
+    box-shadow: 0px 0px 3px 5px gainsboro;
+    padding: 20px;
+}
+
+.containerr {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#hh {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.contain {
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin: 40px;
+    }
+
+    .servicecontainer {
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .para, #paraabout {
+        margin: 0 20px;
+    }
+
+    #imgabout {
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .containerr, .contain {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    #imghome, #imgservice, #imgabout {
+        height: auto;
+        width: 100%;
+    }
+
+    .para, #paraabout {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .containerr, .contain {
+        width: 100%;
+        padding: 10px;
+    }
+}

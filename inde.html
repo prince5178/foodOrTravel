@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav class="header">
+        <h1>Pizza Shop</h1>
+        <ul>
+            <li><a href="home">Home</a></li>
+             <li><a href="#service">Services</a></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="signin">Sign In</a></li>
+              <li><a href="signup">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    
+    
+    <div class="container">
+         <h2>  Welcome to Pizza Shop A Taste of Perfection!</h2>
+         <br><br><br>
+        <img src="images/image2.jpeg" id="imghome" alt=""> <br><br><br>
+ <p>
+
+we bring you the finest flavors from around the world, crafted with love and the freshest ingredients. Whether you’re craving a hearty meal, a sweet treat, or something light and healthy, we have something for everyone. Your restaurant shop should have a smooth and inviting experience for customers, whether they are dining in, ordering online, or getting food delivered. A well-structured digital menu with clear pricing and appetizing images will help customers choose their meals easily. You can also offer online ordering and reservations, allowing customers to book tables in advance or order food for pickup and delivery</p>
+    </div>
+
+
+             <!-- service -->
+
+ <h1 id="service" style="text-align: center; text-transform: uppercase;">service</h1>
+    <div class="servicecontainer">
+       
+        <img src="images/image04.jpeg" id="imgservice" alt="">
+        <img src="images/image05.jpeg" id="imgservice" alt="">
+        <img src="images/image06.jpeg" id="imgservice" alt="">
+
+    </div>
+<div class="para">
+      <h3>Dine-In Experience</h3>
+Enjoy a comfortable and welcoming ambiance where you can savor delicious meals prepared by our expert chefs. Our friendly staff is always ready to serve you with care and attention to detail.
+<br>
+<h3>Online Ordering & Home Delivery</h3>
+Craving your favorite dishes at home? Order online through our website or mobile app and get fresh, hot food delivered straight to your doorstep. We ensure fast and hygienic delivery so you can enjoy restaurant-quality meals from the comfort of your home. <br>
+
+<h3>Takeaway & Curbside Pickup</h3>
+For those on the go, our quick and convenient takeaway service ensures that you get your food packed fresh and ready for pickup. We also offer curbside pickup for a hassle-free experience.
+</div>
+
+
+            <!-- aboutus -->
+<h1 id="aboutus" style="text-align: center; text-transform: uppercase;">about us</h1>
+ <div class="aboutcontainer" >
+    
+ <img src="images/img0787.avif" id="imgabout" alt="">
+  </div>
+  <p id="paraabout"> we pride ourselves on serving authentic [cuisine type] crafted with the freshest, locally-sourced ingredients, delivering a vibrant dining experience that celebrates the flavors of [your region]. Our passionate culinary team takes pride in creating dishes that are not only delicious but also visually stunning, ensuring every meal is a memorable one. Whether you're looking for a casual lunch or a special occasion dinner, our warm hospitality and commitment to quality make [Restaurant Name] the perfect place to gather with friends and family."</p>
+
+
+              <!-- contact us -->
+
+   <div class="containerr">
+        <h2 id="hh">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+              
+                    <!-- login -->
+
+            <div class="contain" id="loginContainer">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Email id">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <div class="container" id="logoutContainer" style="display: none;">
+        <h2>Welcome, <span id="user"></span>!</h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
